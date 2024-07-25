@@ -27,9 +27,9 @@ def respond(api, prompt):
     return response.choices[0].message.content
 if "messages" not in st.session_state:
      st.session_state.messages = []
-st.title ("السلام عليكم ورحمة الله وبركاته")
-st.subheader("انا من اذكى المشاهير")
-user = st.text_input("اسألني")
+st.title ("Talk with Steve Jobs")
+st.subheader("Hey! Im Steve Jobs, ask me anything.")
+user = st.text_input("Ask me anything!")
 if user:
     result = web(user,api_web)
     if result: 
